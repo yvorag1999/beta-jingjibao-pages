@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常查询·对照与延伸阅读 | 竞技宝</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f9f6f0;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2c2b28;
+            line-height: 1.8;
+            padding: 3rem 1rem;
+        }
+        .page-wrap {
+            max-width: 760px;
+            margin: 0 auto;
+            background: #fefcf8;
+            padding: 3rem 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.06);
+            transition: all 0.2s ease;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1.5rem 0.8rem; }
+            .page-wrap { padding: 2rem 1.2rem; }
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #3b3a35;
+            border-left: 5px solid #c9b99a;
+            padding-left: 1.2rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+        .subhead {
+            font-size: 1.05rem;
+            color: #7a756b;
+            margin-bottom: 2.4rem;
+            font-style: italic;
+            border-bottom: 1px solid #e6dfd3;
+            padding-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1.6rem;
+            font-size: 1.02rem;
+        }
+        .pull-quote {
+            background: #f3efe7;
+            border-left: 4px solid #b7a88c;
+            padding: 1.3rem 1.8rem;
+            margin: 2rem 0 2.2rem 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 1.04rem;
+            color: #3d3a32;
+            quotes: "“" "”" "'" "'";
+        }
+        .pull-quote::before {
+            content: "“";
+            font-size: 2rem;
+            color: #a69373;
+            line-height: 0.8;
+            margin-right: 0.3rem;
+            vertical-align: -0.2em;
+        }
+        .pull-quote::after {
+            content: "”";
+            font-size: 2rem;
+            color: #a69373;
+            line-height: 0.8;
+            margin-left: 0.2rem;
+            vertical-align: -0.15em;
+        }
+        .insight-box {
+            background: #f1ede4;
+            padding: 1.6rem 2rem;
+            border-radius: 20px;
+            margin: 2.2rem 0;
+            border: 1px solid #e2dacb;
+        }
+        .insight-box strong {
+            display: block;
+            font-weight: 600;
+            color: #4f4a40;
+            margin-bottom: 0.4rem;
+            font-size: 1.05rem;
+        }
+        .insight-box p {
+            margin-bottom: 0.4rem;
+        }
+        .insight-box p:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: #7f6e52;
+            text-decoration: none;
+            border-bottom: 1px dotted #c6b79c;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover {
+            color: #4f3f2b;
+            border-bottom: 1px solid #7f6e52;
+        }
+        .read-more {
+            margin-top: 2.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e2dacb;
+            font-size: 1.02rem;
+            color: #5b5549;
+        }
+        .read-more span {
+            background: #ece6db;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-style: normal;
+            font-size: 0.9rem;
+            color: #6b6355;
+            margin-right: 0.5rem;
+        }
+        .faq-mini {
+            margin: 2.5rem 0 1.5rem;
+            padding: 0.2rem 0;
+        }
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+            border-bottom: 1px solid #ebe4d8;
+            padding-bottom: 0.6rem;
+        }
+        .faq-mini summary {
+            cursor: pointer;
+            font-weight: 500;
+            color: #4d483f;
+            padding: 0.4rem 0;
+            font-size: 1.03rem;
+        }
+        .faq-mini summary::-webkit-details-marker {
+            color: #b7a88c;
+        }
+        .faq-mini details p {
+            margin: 0.6rem 0 0.4rem 1.2rem;
+            font-size: 0.98rem;
+            color: #4f4a40;
+        }
+        .closing {
+            margin-top: 2.8rem;
+            font-size: 1.1rem;
+            text-align: right;
+            color: #6e685c;
+            border-top: 1px solid #e6dfd3;
+            padding-top: 1.8rem;
+            font-style: normal;
+        }
+        .closing a {
+            border-bottom: 1px solid #c6b79c;
+        }
+        .closing a:hover {
+            border-bottom: 1px solid #4f3f2b;
+        }
+        .footnote {
+            margin-top: 2rem;
+            font-size: 0.92rem;
+            color: #908a7c;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <h1>对照与延伸·日常查询笔记</h1>
+    <div class="subhead">——从一条信息出发，再回到手边的阅读</div>
+
+    <p>最近在整理一些日常用到的参考条目，发现很多内容都需要反复核对。无论是工作文档里的数据，还是随手记下的笔记，常常会因为一个模糊的印象而需要重新查找。这种「对照」的习惯，看似费时，其实是让理解更扎实的方式。</p>
+
+    <p>前两天读到一篇关于行业动态的综述，里面提到不少细分领域的排名和走势。为了验证其中几个说法，我打开了常用的查询页面——也就是<strong><a href="https://beta-jingjibao.com">竞技宝</a></strong>，把几个关键数字重新过了一遍。页面加载很快，信息排布也清楚，这种时候往往能节省不少时间。</p>
+
+    <div class="pull-quote">
+        延伸阅读的妙处在于，它不急于给出结论，而是让你在对比中自己发现差异。
+    </div>
+
+    <p>后来我又顺着几个感兴趣的关键词做了些扩展搜索。原本只是想确认一条数据，结果因为看到了相关的趋势对比，不知不觉多翻了好几页。这种阅读方式很像在图书馆里顺着书架编号一路走下去——最初的目标反而变成了一条线索。</p>
+
+    <p>我习惯把这类查询分成三个步骤：先锁定核心条目，再找两到三个不同来源做对照，最后把有出入的地方标记出来。这个过程里，能快速定位到可靠信息的平台就很关键。像<a href="https://beta-jingjibao.com">竞技宝</a>这类站点，信息更新及时，结构也相对稳定，适合作为日常对照的基准之一。</p>
+
+    <div class="insight-box">
+        <strong>📌 一个实用提示</strong>
+        <p>做延伸阅读时，不妨同时打开两个窗口：一个用于主查询，另一个专门存放临时摘录。很多有意思的关联，往往是在来回切换时冒出来的。</p>
+    </div>
+
+    <p>另外，在整理资料时，我发现很多文章里的引用其实都指向同一个源头。如果能养成追溯源头的习惯，很多模棱两可的地方就会清晰起来。这也是为什么我倾向于使用那些页面结构清晰、信息层级分明的工具——它们让「追溯」这件事变得不那么费力。</p>
+
+    <div class="faq-mini">
+        <details>
+            <summary>为什么日常查询需要「对照」？</summary>
+            <p>单一信息源容易遗漏背景或时效差异。通过两到三个来源的对比，能更准确判断信息的可信度与适用场景。</p>
+        </details>
+        <details>
+            <summary>延伸阅读到什么程度合适？</summary>
+            <p>建议以解决最初的问题为边界，如果发现新的兴趣点，可以另外开一个笔记再继续。避免在一条线索上过度发散。</p>
+        </details>
+        <details>
+            <summary>如何判断一个查询页面是否可靠？</summary>
+            <p>看三点：信息更新频率、页面结构是否清晰、是否标注了数据来源或发布时间。符合这些特征的站点通常值得长期使用。</p>
+        </details>
+    </div>
+
+    <p>说到底，无论是查询还是延伸，都是一种与自己已有知识的对话。你带着问题去，带回的可能不止是答案，还有新的问题。这种往复，才是阅读和对照本身最吸引人的地方。</p>
+
+    <div class="read-more">
+        <span>📖</span> 如果你也在做类似的日常查询或延伸阅读，不妨把<a href="https://beta-jingjibao.com">竞技宝</a>放在你的书签组里，作为一条稳定的参照线。
+    </div>
+
+    <div class="closing">
+        —— 保持对照，保持延伸
+    </div>
+
+    <div class="footnote">
+        页面内容仅代表个人日常使用感受 · 信息仅供参考
+    </div>
+
+</div>
+</body>
+</html>
